@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    color: #0056b3; /* A professional blue */
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+strong {
+    font-weight: 600; /* Bolder than default */
+    color: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    /* background-color: #007bff; */ /* Remove or comment out the static background color */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    /* Add rainbow animation */
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    animation: rainbow-animation 18s ease infinite;
+}
+
+/* Keyframes for the rainbow animation */
+@keyframes rainbow-animation {
+    0% { background-position: 0% 82%; }
+    50% { background-position: 100% 19%; }
+    100% { background-position: 0% 82%; }
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 3.5em; /* Even bolder headline */
+    font-weight: 700;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-style: italic;
+    color: #e9ecef;
+}
+
+/* Sections */
+section {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#intro ul {
+    list-style: disc; /* Changed from 'none' */
+    padding-left: 20px; /* Indent list */
+    margin-top: 15px;
+}
+
+#intro li {
+    margin-bottom: 8px;
+}
+
+/* Background Box */
+.background-box {
+    background-color: #e9ecef; /* Light grey background */
+    border: 1px solid #ced4da;
+    border-left: 5px solid #007bff; /* Accent border */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.background-box h2 {
+    border-bottom: none; /* Remove default border for this specific h2 */
+    margin-top: 0;
+    padding-bottom: 0;
+    font-size: 1.8em; /* Slightly smaller */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #343a40;
+    color: #fff;
+}
+
+footer a {
+    color: #87ceeb; /* Lighter blue for contrast */
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    header h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    .container {
+        padding: 0 15px;
+    }
+    section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    header .tagline {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    body {
+        font-size: 0.95em;
+    }
+} 
